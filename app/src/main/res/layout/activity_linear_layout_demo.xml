@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--父控件增加android:orientation="vertical"可以让垂直排布-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--orientation指定控件的排列方向，当排列方向为horizontal时，注意控件的覆盖问题。排列的另一个方向为vertical（垂直方向）-->
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="#000"
+        android:padding="20dp"
+        android:layout_marginBottom="20dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF0033"
+            />
+
+    </LinearLayout>
+
+    <!--gravity内部元素的排列方式-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="#ff9900"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+    <!--让布局内的两个元素平分：使用weight属性-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="#ff9900"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FF0033"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#00ff00"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

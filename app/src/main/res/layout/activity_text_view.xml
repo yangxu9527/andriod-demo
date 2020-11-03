@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="奔跑的小野马"
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+
+    <!--超过长度结尾用...显示-->
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="奔跑的小野马"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+
+    <!--右边设置图标-->
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="筛选"
+        android:drawableRight="@drawable/ic_arrow_right"
+        android:drawablePadding="5dp"
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+</LinearLayout>
